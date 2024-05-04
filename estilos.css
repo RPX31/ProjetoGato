@@ -3,8 +3,9 @@ html {
     font-family: "Roboto Mono", monospace;
     color:#f5f6f7;
     background: linear-gradient(45deg, rgb(0, 0, 0), rgb(128, 128, 128));
+    background-repeat: no-repeat;
+    
 }
-
 ::-webkit-scrollbar {
     width: 10px; /* Largura da barra de rolagem */
   }
@@ -31,7 +32,7 @@ html {
   }
   
   ::-webkit-scrollbar-thumb {
-    background-color: #1a001a; /* Cor da barra de rolagem */
+    background-color: #1b1b32; /* Cor da barra de rolagem */
     border-radius: 4px; /* Raio das bordas da barra de rolagem */
   }
   
@@ -119,6 +120,12 @@ figcaption {
 
 /* footer */
 
-footer {
+footer p {
     font-size: 0.75em;
+    text-align: center;
+
+}
+.foot{
+    text-align: center;
+
 }
