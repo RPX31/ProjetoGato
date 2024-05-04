@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Mono&display=swap');
+html {
+    font-family: "Roboto Mono", monospace;
+    color:#f5f6f7;
+    background: linear-gradient(45deg, rgb(0, 0, 0), rgb(128, 128, 128));
+}
+
+::-webkit-scrollbar {
+    width: 10px; /* Largura da barra de rolagem */
+  }
+  
+  ::-webkit-scrollbar-track {
+    background: rgba(0, 0, 0, 0.2); /* Cor do fundo da barra de rolagem */
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background-color: #f700fd; /* Cor da barra de rolagem */
+    border-radius: 5px; /* Raio das bordas da barra de rolagem */
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background-color: #cc16ae; /* Cor da barra de rolagem ao passar o mouse */
+  }
+/* barra de rolagem */
+::-webkit-scrollbar {
+    width: 10px; /* Largura da barra de rolagem */
+  }
+  
+  ::-webkit-scrollbar-track {
+    background: rgba(0, 0, 0, 0.2); /* Cor do fundo da barra de rolagem */
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background-color: #1a001a; /* Cor da barra de rolagem */
+    border-radius: 4px; /* Raio das bordas da barra de rolagem */
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background-color: rgb(241, 241, 7); /* Cor da barra de rolagem ao passar o mouse */
+  }
+
+h1 {
+    text-align: center;
+    color: rgb(241, 241, 7);
+}
+
+/* Menu de navegação */
+
+nav {
+    text-align: center;
+}
+
+nav a {
+    color: rgb(241, 241, 7);
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: rgb(241, 241, 7);
+    background-color: #1b1b32;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+ nav ul {
+    list-style: none;
+} 
+
+nav li {
+    margin: 20px;
+}
+
+#lista {
+    list-style: none;
+}
+
+#lista li {
+    margin: 20px;
+}
+
+a {
+    color:rgb(241, 241, 7);
+}
+
+a:hover {
+    color: rgb(241, 241, 7);
+    background-color: #1b1b32;
+}
+
+#linkFoto:hover {
+    background: transparent;
+}
+
+/* galeria */
+
+img {
+    max-width: 400px;
+    height: auto;
+}
+
+#galeria {
+    display: flex;
+    width: 50%;
+    margin: 0 auto;
+    justify-content: center;
+}
+
+figcaption {
+    text-align: left;
+    color: rgb(108, 116, 98);
+}
+
+@media (max-width:650px) {
+    #galeria {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+/* footer */
+
+footer {
+    font-size: 0.75em;
+}
