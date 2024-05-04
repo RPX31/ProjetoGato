@@ -1,131 +1,81 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Mono&display=swap');
-html {
-    font-family: "Roboto Mono", monospace;
-    color:#f5f6f7;
-    background: linear-gradient(45deg, rgb(0, 0, 0), rgb(128, 128, 128));
-    background-repeat: no-repeat;
-    
-}
-::-webkit-scrollbar {
-    width: 10px; /* Largura da barra de rolagem */
-  }
-  
-  ::-webkit-scrollbar-track {
-    background: rgba(0, 0, 0, 0.2); /* Cor do fundo da barra de rolagem */
-  }
-  
-  ::-webkit-scrollbar-thumb {
-    background-color: #f700fd; /* Cor da barra de rolagem */
-    border-radius: 5px; /* Raio das bordas da barra de rolagem */
-  }
-  
-  ::-webkit-scrollbar-thumb:hover {
-    background-color: #cc16ae; /* Cor da barra de rolagem ao passar o mouse */
-  }
-/* barra de rolagem */
-::-webkit-scrollbar {
-    width: 10px; /* Largura da barra de rolagem */
-  }
-  
-  ::-webkit-scrollbar-track {
-    background: rgba(0, 0, 0, 0.2); /* Cor do fundo da barra de rolagem */
-  }
-  
-  ::-webkit-scrollbar-thumb {
-    background-color: #1b1b32; /* Cor da barra de rolagem */
-    border-radius: 4px; /* Raio das bordas da barra de rolagem */
-  }
-  
-  ::-webkit-scrollbar-thumb:hover {
-    background-color: rgb(241, 241, 7); /* Cor da barra de rolagem ao passar o mouse */
-  }
-
-h1 {
-    text-align: center;
-    color: rgb(241, 241, 7);
-}
-
-/* Menu de navegação */
-
-nav {
-    text-align: center;
-}
-
-nav a {
-    color: rgb(241, 241, 7);
-    text-decoration: none;
-}
-
-nav a:hover {
-    color: rgb(241, 241, 7);
-    background-color: #1b1b32;
-    padding: 15px;
-    border-radius: 10px;
-}
-
- nav ul {
-    list-style: none;
-} 
-
-nav li {
-    margin: 20px;
-}
-
-#lista {
-    list-style: none;
-}
-
-#lista li {
-    margin: 20px;
-}
-
-a {
-    color:rgb(241, 241, 7);
-}
-
-a:hover {
-    color: rgb(241, 241, 7);
-    background-color: #1b1b32;
-}
-
-#linkFoto:hover {
-    background: transparent;
-}
-
-/* galeria */
-
-img {
-    max-width: 400px;
-    height: auto;
-}
-
-#galeria {
-    display: flex;
-    width: 50%;
-    margin: 0 auto;
-    justify-content: center;
-}
-
-figcaption {
-    text-align: left;
-    color: rgb(108, 116, 98);
-}
-
-@media (max-width:650px) {
-    #galeria {
-        flex-direction: column;
-        align-items: center;
-    }
-}
-
-/* footer */
-
-footer p {
-    font-size: 0.75em;
-    text-align: center;
-
-}
-.foot{
-    text-align: center;
-
-}
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+	<title>
+		App Meu Gatinho Fofinho
+	</title>
+	<meta charset="utf-8">
+	<meta name="autor" content="Rodrigo Oliveira">
+	<meta name="assunto" content="Um app para quem ama gatos e quer aprender sobre eles.">
+	<link rel="icon" href="favicon-32x32.png">
+  <link rel="stylesheet" href="estilos.css" type="text/css">
+  </head>
+  <body>
+    <header>
+        <h1>App Meu Gatinho Fofinho </h1>
+        <nav aria-label="navegação primária">
+          <ul id="lista">
+            <li><a href="fotos_de_gatos.html">Fotos de gatos</a></li>
+            <li><a href="#fatos">Fatos sobre gatos</a></li>
+            <li><a href="formulario_felino.html">Formulário felino</a></li>
+            <li><a href="#colabore">Colabore</a></li>
+          </ul>
+        </nav>
+        <hr>
+    </header>
+    <main>
+      <section>
+        <h2>Fotos de gatos</h2>
+        <p>Clique aqui para ver mais <a href="fotos_de_gatos.html">fotos de gatos</a>.</p>
+        <a id="linkFoto" href="fotos_de_gatos.html"><img src="GatoFilhote" alt="Um gato laranja deitado de costas."></a>
+      </section>
+      <hr>
+      <article id="fatos">
+        <h2>Fatos sobre gatos</h2>
+        <section id="gatosAmam">
+          <h3>Coisas que gatos amam:</h3>
+          <ul>
+              <li>Catnip (erva para gatos)</li>
+              <li>Amassar pãozinho</li>
+              <li>Cheirar azeitonas</li>
+          </ul>
+          <figure>
+              <img src="azeitona.jpeg" alt="Azeitonas pretas e verdes." width="280" height="185">
+              <figcaption>Gatos <em>amam</em> cheirar azeitonas</figcaption>
+          </figure>
+          <aside>
+              <details>
+          <summary>Por que alguns gatos adoram azeitonas?</summary>
+          <p>Isso acontece devido à presença de componente químico semelhante ao encontrado no catnip</p>
+          <p><strong>Atenção:</strong> Azeitonas são ricas em sódio. Então, <mark>não deixe</mark> seu gatinho comer azeitonas</p>
+          </details>
+          </aside>
+        </section>
+        <section id="gatosOdeiam">
+          <h3>Top 3 coisas que gatos odeiam</h3>
+          <ol>
+          <li>Ir ao veterinário</li>
+          <li>Fogos de artifício</li>
+          <li>Invasores</li>
+          </ol>
+          <figure>
+              <img src="cats-fighting.jpg" alt="Gato de boca aberta reagindo à presença de outro gato." width="280" height="185">
+              <figcaption>Gatos <strong>odeiam</strong> invasores em seu território</figcaption>
+          </figure>
+        </section>
+      </article>
+      <hr>
+      <section id="colabore">
+        <h2>Colabore com o app</h2>
+        <p>Responda <a href="formulario_felino.html">esta pesquisa</a>. Nos ajude a entender mais sobre esses bichinhos.</p>
+        <p>PS: Se você quiser, pode anexar uma foto do seu gato para fazer parte de nossa galeria.</p>
+        <p>Quero participar da pesquisa</p>
+      </section>
+      <hr>
+      <p class="foot"><a href="#">Voltar ao topo</a></p>
+    </main>
+    <footer>
+	  <p>&lt; &copy; Copyright App Meu Gatinho Fofinho &gt;</p>
+    </footer>
+  </body>
+</html>
