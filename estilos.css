@@ -4,6 +4,9 @@ html {
     font-family: "Roboto Mono", monospace;
     color:#f5f6f7;
     background: linear-gradient(45deg, rgb(0, 0, 0), rgb(128, 128, 128));
+    background-size: cover;
+    background-positions: center;
+    min-height: 100vh;
     
     
 }
